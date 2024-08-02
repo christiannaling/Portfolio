@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+}
+
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  body{
+    font-size: 14px;
+  }
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  body{
+    font-size: 15px;
+  }
+}
+
+/* Styles for medium devices */
+@media (min-width: 768px) and (max-width: 991px)  {
+  body{
+    font-size: 16px;
+  }
+}
+
+/* Styles for large devices */
+@media (min-width: 992px) and (max-width: 1199px)   {
+  body{
+    font-size: 17px;
+  }
+}
+
+/* Styles for extra large devices */
+@media (min-width: 1200px) {
+  body{
+    font-size: 18px;
+  }
+}
+
+/* Styles for extra extra large devices */
+@media (min-width: 1400px) {
+  body{
+    font-size: 19px;
+  }
+}

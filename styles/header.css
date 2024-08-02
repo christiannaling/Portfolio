@@ -1,0 +1,22 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 55px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+.left-section{
+  display: flex;
+  align-items: center;
+  margin-left: 5vh;
+}
+
+.right-section{
+  display: flex;
+  align-items: center;
+  column-gap: 2vh;
+  margin-right: 5vh;
+}
