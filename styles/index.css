@@ -21,10 +21,15 @@ main{
   position: relative;
   display: flex;
   justify-content: center;
-  top: 38vh;
+  top: 35vh;
   margin: 0;
   color: white;
   z-index: 100;
+}
+
+.text-career{
+  display: flex;
+  justify-content: center;
 }
 
 
