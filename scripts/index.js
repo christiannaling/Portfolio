@@ -13,7 +13,7 @@ function updateText() {
 
     function updateText() {
       const containerElement = document.querySelector('.text-name');
-      containerElement.innerHTML = `<h1>I am Mark Christian M. Naling <br> <span class="text-career">${careers[careerIndex].slice(0, 1) === 'I' ? 'an' : 'a'} ${careers[careerIndex].slice(0, characterIndex)}</span></h1>`;
+      containerElement.innerHTML = `<div>I am Mark Christian M. Naling <br> <span class="text-career">${careers[careerIndex].slice(0, 1) === 'I' ? 'an' : 'a'} ${careers[careerIndex].slice(0, characterIndex)}</span></div>`;
 
       if (isAdding) {
         characterIndex++; // Increment to add characters

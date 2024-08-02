@@ -26,6 +26,9 @@ main{
   color: white;
   z-index: 100;
 }
+.text-name{
+  font-size: 1.7em;
+}
 
 .text-career{
   display: flex;
@@ -35,8 +38,67 @@ main{
 
 
 .about-container{
-  position: relative;
-  background-color: yellow;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 8vh 5vh 10vh 5vh;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .about-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.about-profile{
+  
+  
+}
+
+.about-image{
+  width: 83%;
+  margin: 5vh 5vh 1.5vh 5vh;
+}
+
+.about-name{
+  display: flex;
+  justify-content: center;
+}
+
+.about-name-span{
+  font-weight: bold;
+}
+
+.skills-container{
+  margin: 5vh 5vh 0vh 5vh;
+}
+
+.skills{
+  font-size: 1.5em;
+  margin-bottom: 3vh;
+}
+
+.progress{
+  margin-bottom: 3vh;
+}
+
+.about-me-container{
+  margin: 8vh 5vh 8vh 5vh;
+  width: 83%;
+  text-align: justify;
+}
+
+.about-me{
+  font-size: 1.5em;
+  margin-bottom: 3vh;
+}
