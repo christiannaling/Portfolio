@@ -20,3 +20,8 @@ header{
   column-gap: 2vh;
   margin-right: 5vh;
 }
+
+.home, .about, .portfolio, .contact{
+  text-decoration: none;
+  color: white;
+}

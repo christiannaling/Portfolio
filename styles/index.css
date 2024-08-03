@@ -85,6 +85,7 @@ main{
 
 .skills{
   font-size: 1.5em;
+  font-weight: bold;
   margin-bottom: 3vh;
 }
 
@@ -100,5 +101,73 @@ main{
 
 .about-me{
   font-size: 1.5em;
+  font-weight: bold;
   margin-bottom: 3vh;
+}
+
+.portfolio-container{
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 8vh 5vh 10vh 5vh;
+}
+
+.contact-container{
+  text-align: center;
+}
+
+.contact-title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.contact-info{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 17px 0px 11px 40px;
+  margin: 0vh 5vh 8vh 5vh;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .contact-info{
+    font-size: 1.125rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.icon {
+  width: 5vh;
+  height: 5vh;
+  object-fit: contain;
+  padding: 1.5vh;
+  margin-right: 2vh;
+  border: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: rgb(255, 191, 0);
+}
+
+.address-container, .telephone-container, .email-container {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 2vh;
+}
+
+.telephone-container{
+  margin-left: 0vh;
+}
+
+@media (min-width: 768px) {
+  .telephone-container{
+  margin-left: 5vh;
+  }
+}
+
+.info{
+  display: block;
+  font-size: .75em;
 }
