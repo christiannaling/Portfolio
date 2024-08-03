@@ -61,13 +61,13 @@ main{
 
 
 .about-profile{
-  
-  
+  text-align: center;
 }
 
 .about-image{
-  width: 83%;
-  margin: 5vh 5vh 1.5vh 5vh;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  width: 80%;
 }
 
 .about-name{
@@ -94,9 +94,15 @@ main{
 }
 
 .about-me-container{
-  margin: 8vh 5vh 8vh 5vh;
-  width: 83%;
+  margin: 45px 38px 57px 38px;
   text-align: justify;
+}
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .about-me-container{
+    margin: 45px 28px 35px 28px;
+  }
 }
 
 .about-me{
@@ -127,7 +133,7 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   padding: 17px 0px 11px 40px;
-  margin: 0vh 5vh 8vh 5vh;
+  margin: 0vh 5vh 10vh 5vh;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -154,14 +160,20 @@ main{
   display: flex;
   align-items: center;
   text-align: start;
-  margin-bottom: 2vh;
+}
+
+/* Styles for extra small devices */
+@media (max-width: 767px) {
+  .address-container, .telephone-container, .email-container {
+    margin: 10px 0px 10px 0px;
+  }
 }
 
 .telephone-container{
   margin-left: 0vh;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 840px){
   .telephone-container{
   margin-left: 5vh;
   }
