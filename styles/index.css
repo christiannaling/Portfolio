@@ -40,6 +40,7 @@ main{
 .about-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
   margin: 8vh 5vh 10vh 5vh;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -49,6 +50,7 @@ main{
 @media (max-width: 575px) {
   .about-container{
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.2fr 0.8fr;
   }
 }
 
@@ -56,6 +58,7 @@ main{
 @media (min-width: 576px) and (max-width: 767px) {
   .about-container{
     grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.4fr 0.6fr;
   }
 }
 
@@ -70,6 +73,13 @@ main{
   width: 80%;
 }
 
+/* Styles for extra extra large devices */
+@media (min-width: 1400px) {
+  .about-image{
+    width: 50%;
+  }
+}
+
 .about-name{
   display: flex;
   justify-content: center;
@@ -80,21 +90,74 @@ main{
 }
 
 .skills-container{
+  height: 100%;
   margin: 5vh 5vh 0vh 5vh;
 }
 
 .skills{
   font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 3vh;
+  margin-bottom: 15px;
 }
 
-.progress{
-  margin-bottom: 3vh;
+/* Styles for medium devices */
+@media (min-width: 768px) and (max-width: 991px)  {
+  .skills{
+    margin-bottom: 10px;
+  }
 }
+
+.skills-text{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+/* Styles for medium devices */
+@media (min-width: 768px) and (max-width: 991px)  {
+  .skills-text{
+    margin-bottom: 3px;
+  }
+}
+
+.progress-bar{
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  margin-bottom: 10px;
+}
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .progress-bar{
+    margin-bottom: 8px;
+  }
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .progress-bar{
+    margin-bottom: 6px;
+  }
+}
+
+/* Styles for medium devices */
+@media (min-width: 768px) and (max-width: 991px)  {
+  .progress-bar{
+    margin-bottom: 8px;
+  }
+}
+
+.html{width: 50%; height: 15px; background-color: #0078ff;}
+.css{width: 45%; height: 15px; background-color: #0078ff;}
+.javascript{width: 35%; height: 15px; background-color: #0078ff;}
+.csharp{width: 30%; height: 15px; background-color: #0078ff;}
+.aspnet{width: 30%; height: 15px; background-color: #0078ff;}
+.git{width: 40%; height: 15px; background-color: #0078ff;}
+.github{width: 40%; height: 15px; background-color: #0078ff;}
+.figma{width: 40%; height: 15px; background-color: #0078ff;}
 
 .about-me-container{
-  margin: 45px 38px 57px 38px;
+  margin: 50px 38px 50px 38px;
   text-align: justify;
 }
 
@@ -132,7 +195,7 @@ main{
 .contact-info{
   display: grid;
   grid-template-columns: 1fr;
-  padding: 17px 0px 11px 40px;
+  padding: 17px 0px 17px 40px;
   margin: 0vh 5vh 10vh 5vh;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
