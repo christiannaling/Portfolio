@@ -14,10 +14,19 @@
   <header>
     <div class="left-section">Portfolio</div>
     <div class="right-section">
-      <a href="#home-section" class="home">Home</a>
-      <a href="#about-section" class="about">About</a>
-      <a href="#portfolio-section" class="portfolio">Portfolio</a>
-      <a href="#contact-section" class="contact">Contact</a>
+      <a href="#home-section" class="home hideOnMobile">Home</a>
+      <a href="#about-section" class="about hideOnMobile">About</a>
+      <a href="#portfolio-section" class="portfolio hideOnMobile">Portfolio</a>
+      <a href="#contact-section" class="contact hideOnMobile">Contact</a>
+      <div class="menu-button"><i class="fa-solid fa-bars" onclick="showSidebar()"></i></div>
+      
+    </div>
+    <div class="side-bar">
+      <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+      <a href="#home-section" class="home" onclick="closeSidebar()">Home</a>
+      <a href="#about-section" class="about" onclick="closeSidebar()">About</a>
+      <a href="#portfolio-section" class="portfolio" onclick="closeSidebar()">Portfolio</a>
+      <a href="#contact-section" class="contact" onclick="closeSidebar()">Contact</a>
     </div>
   </header>
   <main>
@@ -126,7 +135,7 @@
         </div>
       </div>
     </section>
-    <script src="scripts/index.js"></script>
+    <a  class="scroll-up" href="#home-section"><i class="fa-solid fa-arrow-up"></i></a>
   </main>
   <footer>
     <div class="footer-section">
@@ -138,5 +147,6 @@
       <div class="design">Designed by Christian</div>
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

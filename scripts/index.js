@@ -1,3 +1,17 @@
+//sidebar
+function showSidebar() {
+  const sidebar = document.querySelector('.side-bar');
+  sidebar.style.display = 'flex';
+}
+
+function closeSidebar(){
+  const sidebar = document.querySelector('.side-bar');
+  sidebar.style.display = 'none';
+}
+
+
+
+//text animation
 const careers = ['Web Developer', 'Front-End Developer'];
 
 let careerIndex = 0;
