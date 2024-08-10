@@ -179,44 +179,157 @@ main{
   margin-bottom: 3vh;
 }
 
+/*PORTFOLIO*/
 .portfolio-container{
+  text-align: center;
+  margin: 8vh 5vh 0vh 5vh;
+  padding: 5vh;
+  color: black;
+}
+
+.portfolio-header{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.my-portfolio{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: black;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 100%;
+}
+
+.portfolio-overview{
+  width: 60%;
+}
+
+.portfolio-title{
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 2vh;
+}
+
+.portfolio-image{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+}
+
+.portfolio-pc{
+  width: 70%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.portfolio-mobile{
+  width: 17.7%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.language-and-tools{
+  display: flex;
+  justify-content: center;
+  column-gap: 2vh;
+}
+
+.html-tool, .css-tool, .javascript-tool{
+  background-color: rgb(0, 120, 255);
+  color: white;
+  border-radius: 5vh;
+  padding: 1vh 3vh 1vh 3vh;
+}
+
+.portfolio-description-container{
+  width: 35%;
+  justify-content: center;
+}
+
+
+/* Styles for small devices */
+@media (max-width: 767px) {
+  .portfolio-overview{
+    width: 100%;
+  }
+  .portfolio-description-container{
+    width: 100%;
+  }
+}
+
+.portfolio-description{
+  margin-top: 5vh;
+  width: 100%;
+  font-size: .9em;
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+.view-website-btn button{
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  width: 80%;
+  padding: 1.5vh;
+  background-color: rgb(0, 120, 255);
+  border: none;
+  border-radius: 50vh;
+  cursor: pointer;
+}
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .my-portfolio{
+    margin-bottom: 6vh;
+  }
+  .language-and-tools{
+    display: flex;
+    justify-content: center;
+    column-gap: 1vh;
+  }
+  .html-tool, .css-tool, .javascript-tool{
+    padding: .5vh 1vh .5vh 1vh;
+  }
+  .portfolio-description{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .view-website-btn button{
+    width: 80%;
+    padding: .8vh;
+    border-radius: 50vh;
+  }
+}
+/*CONTACT*/
+.contact-title{
   display: flex;
   justify-content: center;
   font-size: 2em;
   font-weight: bold;
-  margin: 8vh 5vh 10vh 5vh;
+  margin-bottom: 5vh;
 }
-
 .contact-container{
   text-align: center;
-}
-
-.contact-title{
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info{
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 17px 0px 17px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 4vh 2vh 4vh 2vh;
+  width: 90%;
   margin: 0vh 5vh 10vh 5vh;
+  row-gap: 1vh;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 768px) {
-  .contact-info{
-    font-size: 1.125rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .contact-info{
-    grid-template-columns: 1fr;
-    padding: 17px 0px 17px 25px;
-  }
 }
 
 .fa-location-dot{
@@ -230,13 +343,6 @@ main{
   border-color: #0078ff;;
 }
 
-@media (max-width: 575px) {
-  .fa-location-dot{
-    font-size: 1.5rem;
-    padding: 1.5vh 1.8vh;
-  }
-}
-
 .fa-phone, .fa-envelope{
   font-size: 2rem;
   color: #0078ff;
@@ -248,34 +354,34 @@ main{
   border-color: #0078ff;;
 }
 
-@media (max-width: 575px) {
-  .fa-phone, .fa-envelope{
-    font-size: 1.5rem;
-    padding: 1.5vh;
-  }
-}
-
 .address-container, .telephone-container, .email-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: start;
+  text-wrap: wrap;
+}
+.address-container{
+  width: 30%;
+}
+.telephone-container{
+  width: 30%;
+}
+.email-container {
+  width: 36%;
 }
 
-/* Styles for extra small devices */
-@media (max-width: 767px) {
-  .address-container, .telephone-container, .email-container {
-    margin: 10px 0px 10px 0px;
-  }
+.address-container i, .telephone-container i, .email-container i{
+  cursor: pointer;
+}
+
+.address-container i:hover, .telephone-container i:hover, .email-container i:hover {
+  background-color: rgb(0, 120, 255);
+  color: white;
 }
 
 .telephone-container{
   margin-left: 0vh;
-}
-
-@media (min-width: 840px){
-  .telephone-container{
-  margin-left: 5vh;
-  }
 }
 
 .info{
@@ -300,4 +406,45 @@ main{
 .fa-arrow-up{
   font-size: 15px;
   color: white;
+}
+
+@media (max-width: 840px){
+  .address-container, .telephone-container, .email-container {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 5vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-info{
+    font-size: 1.125rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Styles for extra small devices */
+@media (max-width: 767px) {
+  .contact-info{
+    padding-left: 2vh 2vh 2vh 8vh;
+  }
+  .address-container, .telephone-container, .email-container {
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+@media (max-width: 575px) {.contact-info{
+  padding: 1vh 1vh 1vh 2vh;
+}
+  .fa-location-dot{
+    font-size: 1.5rem;
+    padding: 1.5vh 1.8vh;
+  }
+  .fa-phone, .fa-envelope{
+    font-size: 1.5rem;
+    padding: 1.5vh;
+  }
+  .address-container, .telephone-container, .email-container {
+    padding-left: 1vh;
+  }
 }
